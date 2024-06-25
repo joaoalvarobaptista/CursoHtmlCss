@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Criando um link externo</h1>
+
+    <p>Um link externo é um link para um site que não é o nosso</p>
+    <p>Você pode acessar meu <a href="https://github.com/joaoalvarobaptista">repositório público do GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UC13LgTM8Tjch88I8q2KQScQ">canal gratuito no YouTube</a></p>
+    <p>Da forma que foi feito anteriormente, toda vez que alguém clicar no link, ele irá sair do site e pode acontecer de nunca mais voltar. Por conta disso, recomenda-se que usemo a propriedade da tag a "target="_blank""</p>
+    <p>Exemplo:</p>
+
+    <p>Agora você vai clicar no link para <a href="https://www.youtube.com/channel/UC13LgTM8Tjch88I8q2KQScQ" target="_blank" rel="external">meu canal</a> e uma nova janela irá abrir </p>
+
+    <p>Outro parametro é <mark>rel ="..."</mark> que diz para os motores de busca que o link não é seu. </p>
+
+    <p>Esta é a primeira página do site, se quiser vá para a <a href="pag002.html" rel="next">página 02</a></p>
+
+    <!-- Quando você faz um link para uma página que você não recomenda utilizamos o rel="unfolow"-->
+
+    <p>Esta página é um oferecimanto de <a href="http://www.hostnet.com.br" rel="nofollow">Hostnet</a></p>
+
+    <p>Você pode ir para a nossa <a href="noticias/news.html" rel="next">página de notícias</a></p>
+
+    <h2>Agora um link para Download</h2>
+
+    <p>Dentro da pasta do exercício, foi criada uma pasta chamada livros e nela posto um pdf e o mesmo pdf zipado.</p>
+
+    <p><a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank" rel="next">Clique aqui para abrir o capítulo do livro referente ao conteúdo de links</a></p>
+
+    <p>Agora você vai clicar na <a href="Livro/10 - Ligações em toda parte.zip" rel="">versão compactada do pdf</a></p>
+
+    <p>Uma outra forma usando o conceito de lista</p>
+
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank" rel="next">Livro em pdf</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank" rel="next">Versão compactada</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11 - Medias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica.</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o navegador</p>
+    <!-- Utilizaremos a tag picture que diferente da tag img permite vários sorces.-->
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+
+    <!-- Guanabara comenta sobre direitos autorais de música enfatizando que a discussão dita sobre imagem é a mesma que para medias. -->
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!-- Formatos compativeis : mp3 - wav - ogg-->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        
+        <!-- Tente evitar o arquivo WAV, pois são muito pesados. -->
+         
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/guanacast-33.mp3">clique aqui</a> para baixar o arquivo</p>
+    </audio>
+</body>
+</html>

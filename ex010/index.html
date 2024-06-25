@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações em HTML</title>
+</head>
+<body>
+    <h1>Outras formatações </h1>
+    <h2>Código fonte / Pre-formatado.</h2>
+    <p>Código fonte, são comandos</p>
+    <p><en>Exemplo</en></p>
+
+    <p>O Comando <code>documento.documentById()</code> é um comando em JavaScript</p>
+
+    <p>Quando colocamos o comando com a tag cod, ele fica com uma fonte mono-espacada, boa para escrever códigos, porém não é bom para escrever codigos inteiros. </p>
+    <p>Exemplo de código Python.</p>
+    <pre>
+        <code>
+num=int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é par!')
+else:
+    print(f' O número {num} é impar!')
+        </code>
+    </pre>
+
+    <p>Quando usamos a tag code, é possível escrever linhas de código de forma estilizada. Mas esta tag sozinha tem uma dificuldade de escrever linhas de código em sequência. Para isso é indicado o uso da tag &lt; pre &gt; que faz com que apareça na tela exatamente o que está sendo colocado como no exemplo anterior. </p>
+
+    <p>note que ficou com um espaço muito grade. </p>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amig: <q>O computador é um burro muito rápido.</q></p>
+    <p>Quando estamos colocando a tag "q" estamos dando um sentido ao que está sendo citado. </p>
+
+    <h2>Citações completas </h2>
+
+    <p>Segundo bla bla bla </p>
+    <blockquote cite="bla bla bla">
+        In just a short time, you can learn how to use HTML, Cascading Style Sheets (CSS), and JavaScript together to design, create, and maintain world-class websites. Each lesson in this book builds on the previous ones, enabling you to learn the essentials from the ground up. Clear instructions and practical, hands-on examples show you how to use HTML to create the framework of your website, design your site’s layout and typography with CSS, and then add interactivity with JavaScript and jQuery.
+    </blockquote>
+
+    <p>Uma citação é um "bloco" de texto deslocado que podemos colocar um parametro cite para que ferramentas de busca tenham essa informação. </p>
+
+    <h2>Abreviações</h2>
+
+    <p>abaixo, as siglas tem um parametro "title" que permite colocar uma frase. É indicado para escrever o significado da sigla que está sendo referida. </p>
+    <p>Estou estudando <abbr title="HyperText Marckup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <p>Estamos dizendo o que significa as siglas utilizadas para os visitantes e mecanismos de busca com a tag abbr</p>
+
+    <h2>Texto invertido</h2>
+
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo> </p>
+    <p>ALterando arquivo para GIT</p>
+</body>
+</html>

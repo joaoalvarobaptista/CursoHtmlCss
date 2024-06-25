@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprendendo a colocar vídeos no site.</h1>
+    <p>Abaixo, um vídeo que eu baixei do <a href="http://www.pexels.com">pexels</a></p>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/meu-video.mp4" width="560" controls></video>
+    <video src="midia/meu-video.m4v" width="560" controls></video>
+    <video src="midia/meu-video.webm" width="560" poster="imagens/limoes-capa.png" controls></video>
+    <!-- Este forma não funcionou no Edge 25/06/2024-->
+    <video src="midia/meu-video.ogv" width="560" controls></video>
+
+    <p>Aqui abaixo vou criar utilizando a tag &lt; source &gt; </p>
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.m4v" type="">r
+        <source src="midia/meu-video.mp4" type="">r
+        <source src="midia/meu-video.ogv" type="">r
+        <source src="midia/meu-video.webm" type="">r
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <a href="midia/meu-video.mp4">Baixe aqui o arquivo mp4</a></p>
+    </video>
+
+    <h2>Incorporando um vídeo externo </h2>
+
+    <p>A ideia é utilizar vídeos que estão hospedados em outros servidores como o <a href="http://www.youtube.com" target="_blank">Youtube</a> ou o <a href="http://www.vimeo.com" target="_blank" rel="external">Vimeo</a> que são plataformas de vídeos. Esta solução é indicada para diminuir o trafego do site pois o vídeo que vai ser posto não vai aumentar em nada o trafego do site. </p>
+
+    <h3>Inserindo vídeo do youtube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-gjgeXYfPi8" title="IRIS | Animation &amp; Live Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Inserindo vídeo do Vimeo</h3>
+
+    <iframe src="https://player.vimeo.com/video/36086244?h=a53ee573cf&autoplay=1&loop=1&color=ff0179&portrait=0" width="560" height="331" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
