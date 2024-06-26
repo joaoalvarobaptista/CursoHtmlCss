@@ -3,32 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilos internos ou locais.</title>
-    <style>
-        body{
-            background-color: lightsteelblue;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h1{
-            background-color: lightblue;
-            color: mediumblue;
-            font-size: 2em;
-        }
-        p{
-            text-align: justify;
-        }
-    </style>
+    <title>Estilos externos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 
-    Aqui vamos colocar o estilo separado, mas ainda dentro do arquivo html.
-    Na tag <head> vamos abrir a tag <style>. Esta forma de criar inicia o conceito de seletores. Para mudar o estilo do body, inicamos o seletor 
-        body{
-            Bloco de estilis do body
-        }
-
-        uma desvantagem de utilizar esta técnica é que "geralmente" o estilo gera mais linhas do que o conteúdo. Outra é que se outra página usar o mesmo estilo, você teria que colocar o mesmo estilo em mais documentos e qualquer pequena modificação seria bastante penosa. 
+    Aqui, criamos um arquivo com extensão ".css" e nesse arquivo colocamos todos os estilos que desejamos colocar no nosso site. Na tag <head> faremos uma referência ao arquivo .css usando o tag <link rel="stylesheet" href="AQUI COLOCAMOS O ENDERECO DO ARQUIVO">
     -->
     <h1>Capítulo 1 </h1>
     <h2>Capítulo 1.1</h2>
@@ -40,5 +20,6 @@
 
     <h2>Capítulo 2.1</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatem eum quasi praesentium fugit consequatur asperiores, nisi delectus illo aperiam dolorem ad aut eaque reiciendis dignissimos sint dolores porro incidunt.</p>
+    <p><a href="pagina02.html" target="_self">ir para a página 2</a></p>
 </body>
 </html>
